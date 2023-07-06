@@ -22,12 +22,16 @@ body {
 }
 
 .navbar-toggler {
-  border: var(--bs-border-width) solid var(--border-color);
+  border: medium solid var(--border-color);
 }
 
 .nav-link,
 .navbar-nav .nav-link.active {
   color: var(--first-color);
+}
+
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.232);
 }
 
 .navbar-toggler-icon {
@@ -38,6 +42,18 @@ body {
 
 /* ********** my styles*************** */
 
+footer {
+  background-color: var(--bg-color);
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 0.764);
+}
+
 .home-section {
   height: 100vh;
   width: 100%;
@@ -45,6 +61,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
