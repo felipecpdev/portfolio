@@ -17,6 +17,10 @@ body {
   background-color: var(--bg-color) !important;
 }
 
+.bg-alpha-color {
+  background-color: var(--bg-alpha-color);
+}
+
 .navbar-brand {
   color: var(--first-color);
 }
@@ -67,6 +71,12 @@ footer a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+.text-gradient {
+  background: var(--third-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
