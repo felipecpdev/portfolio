@@ -51,6 +51,28 @@ body {
 
 /* ********** my styles*************** */
 
+#about {
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  top: 20%;
+  left: 55%;
+  background-color: #ed2ff0;
+  filter: blur(90px);
+}
+
+.card-style{
+  margin-top: 6rem;
+  background-color: var(--bg-alpha-color);
+  border: medium solid var(--border-color);
+  box-shadow: 2px 2px 2px 1px var(--first-color);
+}
+
 footer {
   background-color: var(--bg-color);
 }
@@ -81,10 +103,12 @@ footer a:hover {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+ 
 }
 
 /* // Large devices (desktops, 992px and up) */
