@@ -62,15 +62,21 @@ body {
   height: 10rem;
   top: 20%;
   left: 55%;
-  background-color: #ed2ff0;
+  background-color: var(--second-color);
   filter: blur(90px);
 }
 
-.card-style{
+.card{
+  background-color: var(--bg-alpha-color);
+  border: medium solid var(--border-color);
+}
+
+
+.card-style {
   margin-top: 6rem;
   background-color: var(--bg-alpha-color);
   border: medium solid var(--border-color);
-  box-shadow: 2px 2px 2px 1px var(--first-color);
+  box-shadow: 2px 2px 2px 1px var(--second-color);
 }
 
 footer {
@@ -85,6 +91,13 @@ footer a:hover {
   color: rgba(255, 255, 255, 0.764);
 }
 
+.hab-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 6rem;
+}
+
 .home-section {
   height: 100vh;
   width: 100%;
@@ -95,7 +108,21 @@ footer a:hover {
   background-attachment: fixed;
 }
 
+.mr-tp {
+  margin-top: 6rem;
+}
+
 .text-gradient {
+  background: var(--third-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.second-color {
+  color: var(--second-color);
+}
+
+.icon-gradient{
   background: var(--third-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -103,12 +130,10 @@ footer a:hover {
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
- 
 }
 
 /* // Large devices (desktops, 992px and up) */
