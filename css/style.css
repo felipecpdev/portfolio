@@ -122,6 +122,13 @@ footer a:hover {
   color: var(--second-color);
 }
 
+.tech-section{
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  padding: 6rem 6rem;
+}
+
 .icon-gradient{
   background: var(--third-color);
   -webkit-background-clip: text;
