@@ -26,6 +26,10 @@ body {
   color: var(--first-color);
 }
 
+.navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.232);
+}
+
 .navbar-toggler {
   border: medium solid var(--border-color);
 }
