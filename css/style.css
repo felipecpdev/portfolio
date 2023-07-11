@@ -9,6 +9,10 @@
 }
 /* ********** Reset styles *************** */
 
+html {
+  scroll-padding-top: var(--scroll-padding, 70px);
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -59,7 +63,7 @@ body {
 
 #about {
   position: relative;
-  padding: 1rem 0px;
+  padding: 2rem 0px;
 }
 
 .card {
