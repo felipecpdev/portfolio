@@ -413,6 +413,20 @@
       const tooltipList = [...tooltipTriggerList].map(
         (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
       );
+
+      const width = document.getElementsByTagName("body")[0].offsetWidth;
+      if (width < 992) {
+        const navLinks = document.querySelectorAll(".nav-item");
+        const menuToggle = document.getElementById("navbarNavDropdown");
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {
+          toggle: false,
+        });
+        navLinks.forEach((l) => {
+          l.addEventListener("click", () => {
+            bsCollapse.toggle();
+          });
+        });
+      }
     </script>
   </body>
 </html>
