@@ -112,8 +112,9 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
-.mr-tp {
-  margin-top: 6rem;
+.job-section {
+  display: flex;
+  padding: 2rem 0;
 }
 
 .text-gradient {
