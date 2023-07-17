@@ -159,7 +159,6 @@ footer a:hover {
 @media (min-width: 768px) {
   .job-container {
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
   }
 }
 
