@@ -97,13 +97,16 @@ footer a:hover {
 }
 
 .home-section {
-  height: 100vh;
   width: 100%;
-  background-image: url(../assets/sp.gif);
+  background-image: url(../assets/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-gradient {

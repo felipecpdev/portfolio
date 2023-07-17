@@ -63,91 +63,63 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
-      <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand text-truncate" href="#">FelipeCPDev</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-lg-center"
-            id="navbarNavDropdown"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">Sobre mí</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#hab">Mis Habilidades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tech">Tecnologías</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#jobs">Trabajos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#footer">Contacto</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-truncate" href="#">FelipeCPDev</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-lg-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hab">Mis Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tech">Tecnologías</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jobs">Trabajos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <section id="home" class="home-section min-vh-100">
-        <article class="container h-100">
-          <div
-            class="row d-flex flex-column h-100 w-100 justify-content-center align-content-center"
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="home-section min-vh-100 text-center">
+        <h1 class="text-white fw-1 fs-1 d-flex px-2">Bienvenido a mi web</h1>
+        <h3 class="text-white fw-4 fs-4 d-none d-md-flex px-2">
+          Este es mi portafolio y CV, conoce mis habilidades y tecnologías con
+          las que he trabajado anteriormente. ¡Espero que te guste!
+        </h3>
+        <div
+          class="d-grid gap-2 d-sm-flex justify-content-center align-items-center"
+        >
+          <a class="btn btn-primary" href="#footer" role="button">Contáctame</a>
+          <a
+            class="btn btn-primary"
+            href="https://felipecpdev.github.io/portfolio/assets/CV_Felipe_Contreras.pdf"
+            role="button"
+            target="_blank"
+            >Descargar CV</a
           >
-            <h1
-              class="text-white fw-1 fs-1 text-truncate"
-              data-bs-toggle="tooltip"
-              title="Felipe Contreras"
-            >
-              Soy Felipe Contreras
-            </h1>
-            <h2
-              class="text-white fw-2 fs-2 text-truncate"
-              data-bs-toggle="tooltip"
-              title="Desarrollador de Software"
-            >
-              Desarrollador de Software
-            </h2>
-            <h3 class="text-white fw-4 fs-4 d-none d-md-flex">
-              Este es mi portafolio y CV, conoce mis habilidades y tecnologías
-              con las que he trabajado anteriormente. ¡Espero que te guste!
-            </h3>
-            <div
-              class="d-grid gap-2 d-sm-flex justify-content-center align-items-center"
-            >
-              <a
-                class="btn btn-primary text-truncate"
-                href="#footer"
-                role="button"
-                data-bs-toggle="tooltip"
-                data-bs-title="Contactame"
-                >Contáctame</a
-              >
-              <a
-                class="btn btn-primary text-truncate"
-                href="https://felipecpdev.github.io/portfolio/assets/CV_Felipe_Contreras.pdf"
-                role="button"
-                target="_blank"
-                data-bs-toggle="tooltip"
-                data-bs-title="Descargar CV"
-                >Descargar CV</a
-              >
-            </div>
-          </div>
-        </article>
+        </div>
       </section>
       <section
         id="about"
@@ -194,7 +166,7 @@
       </section>
       <section id="hab" class="hab-section bg-alpha-color">
         <div class="container">
-          <h2 class="second-color fs-1 fw-1 text-truncate text-center mb-3">
+          <h2 class="second-color fs-1 fw-1 text-center mb-3">
             Mis Habilidades
           </h2>
           <div class="row">
@@ -243,7 +215,7 @@
       </section>
       <section id="tech" class="tech-section bg-alpha-color">
         <div class="container w-100">
-          <h2 class="second-color fs-1 fw-1 text-truncate text-center mb-3">
+          <h2 class="second-color fs-1 fw-1 text-center mb-3">
             Tecnologías conocidas
           </h2>
           <div class="row">
@@ -280,7 +252,6 @@
               </div>
             </div>
           </div>
-          <!-- row 2 -->
           <div class="row mt-xxl-4">
             <div
               class="col-12 d-flex flex-column flex-md-row justify-content-evenly align-items-center"
@@ -319,7 +290,7 @@
       </section>
       <section id="jobs" class="job-section bg-alpha-color">
         <div class="container">
-          <h2 class="second-color fs-1 fw-1 text-truncate text-center mb-3">
+          <h2 class="second-color fs-1 fw-1 text-center mb-3">
             Trabajos anteriores
           </h2>
           <div class="row">
