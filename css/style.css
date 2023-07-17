@@ -115,6 +115,22 @@ footer a:hover {
   -webkit-text-fill-color: transparent;
 }
 
+.job-card {
+  padding: 1em 0em;
+}
+
+.job-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+  padding: 1em 0em;
+  place-items: center;
+}
+
+.job-container > * {
+  text-align: center;
+}
+
 .job-section {
   display: flex;
   padding: 2rem 0;
@@ -141,6 +157,11 @@ footer a:hover {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .job-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
 }
 
 /* // Large devices (desktops, 992px and up) */
