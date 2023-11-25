@@ -66,9 +66,25 @@ body {
   padding: 2rem 0px;
 }
 
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
 .card {
   background-color: var(--bg-alpha-color);
   border: medium solid var(--border-color);
+}
+
+.card-one {
+  background-color: var(--bg-alpha-color);
+  padding: 1rem;
+  border-radius: 2rem;
+  z-index: 100;
+  margin: 1rem;
 }
 
 .card-style {
@@ -98,10 +114,11 @@ footer a:hover {
 
 .home-section {
   width: 100%;
-  background-image: url(../assets/bg.jpg);
+  background: var(--third-color);
+  /*background-image: url(../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-position: center; */
+   background-position: center; */
   background-attachment: fixed;
   display: flex;
   flex-direction: column;

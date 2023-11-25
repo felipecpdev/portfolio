@@ -103,22 +103,27 @@
     </nav>
     <main>
       <section id="home" class="home-section min-vh-100 text-center">
-        <h1 class="text-white fw-1 fs-1 d-flex px-2">Bienvenido a mi web</h1>
-        <h3 class="text-white fw-4 fs-4 d-none d-md-flex px-2">
-          Este es mi portafolio y CV, conoce mis habilidades y tecnologías con
-          las que he trabajado anteriormente. ¡Espero que te guste!
-        </h3>
-        <div
-          class="d-grid gap-2 d-sm-flex justify-content-center align-items-center"
-        >
-          <a class="btn btn-primary" href="#footer" role="button">Contáctame</a>
-          <a
-            class="btn btn-primary"
-            href="https://felipecpdev.github.io/portfolio/assets/CV_Felipe_Contreras.pdf"
-            role="button"
-            target="_blank"
-            >Descargar CV</a
+        <canvas class="background"></canvas>
+        <div class="card-one">
+          <h1 class="text-white fw-1 fs-1 d-flex px-2">Bienvenido a mi web</h1>
+          <h3 class="text-white fw-4 fs-4 d-none d-md-flex px-2">
+            Este es mi portafolio y CV, conoce mis habilidades y tecnologías con
+            las que he trabajado anteriormente. ¡Espero que te guste!
+          </h3>
+          <div
+            class="d-grid gap-2 d-sm-flex justify-content-center align-items-center"
           >
+            <a class="btn btn-primary" href="#footer" role="button"
+              >Contáctame</a
+            >
+            <a
+              class="btn btn-primary"
+              href="https://felipecpdev.github.io/portfolio/assets/CV_Felipe_Contreras.pdf"
+              role="button"
+              target="_blank"
+              >Descargar CV</a
+            >
+          </div>
         </div>
       </section>
       <section
@@ -410,7 +415,45 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
     <script>
+      Particles.init({
+        // normal options
+        selector: ".background",
+        color: "#48F2E3",
+        maxParticles: 450,
+        connectParticles: true,
+        // options for breakpoints
+        responsive: [
+          {
+            breakpoint: 768,
+            options: {
+              maxParticles: 200,
+              color: "#48F2E3",
+              connectParticles: true,
+            },
+          },
+          {
+            breakpoint: 425,
+            options: {
+              maxParticles: 100,
+              color: "#48F2E3",
+              connectParticles: true,
+            },
+          },
+          {
+            breakpoint: 320,
+            options: {
+              maxParticles: 50,
+              color: "#48F2E3",
+              connectParticles: true,
+              // disables particles.js
+            },
+          },
+        ],
+      });
+
       const navHeight = document.querySelector("nav").offsetHeight;
       document.documentElement.style.setProperty(
         "--scroll-padding",
