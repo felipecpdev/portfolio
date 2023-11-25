@@ -118,8 +118,8 @@ footer a:hover {
   /*background-image: url(../assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-   background-position: center; */
-  background-attachment: fixed;
+   background-position: center; 
+  background-attachment: fixed;*/
   display: flex;
   flex-direction: column;
   align-items: center;

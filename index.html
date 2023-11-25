@@ -422,20 +422,12 @@
         // normal options
         selector: ".background",
         color: "#48F2E3",
-        maxParticles: 450,
+        maxParticles: 200,
         connectParticles: true,
         // options for breakpoints
         responsive: [
           {
             breakpoint: 768,
-            options: {
-              maxParticles: 200,
-              color: "#48F2E3",
-              connectParticles: true,
-            },
-          },
-          {
-            breakpoint: 425,
             options: {
               maxParticles: 100,
               color: "#48F2E3",
@@ -443,9 +435,17 @@
             },
           },
           {
-            breakpoint: 320,
+            breakpoint: 425,
             options: {
               maxParticles: 50,
+              color: "#48F2E3",
+              connectParticles: true,
+            },
+          },
+          {
+            breakpoint: 320,
+            options: {
+              maxParticles: 20,
               color: "#48F2E3",
               connectParticles: true,
               // disables particles.js
